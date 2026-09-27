@@ -1,0 +1,14 @@
+storage/owner-access.txt
+storage/error.log
+storage/shots/
+storage/*.png
+uploads/audio/*
+uploads/photos/*
+uploads/covers/*
+uploads/audio/*
+uploads/photos/*
+uploads/covers/*
+!uploads/audio/.htaccess
+!uploads/photos/.htaccess
+!uploads/covers/.htaccess
+!uploads/**/.htaccess

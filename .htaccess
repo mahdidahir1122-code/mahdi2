@@ -1,0 +1,13 @@
+Options -Indexes
+
+<FilesMatch "^(config\.php|bootstrap\.php|router\.php|schema\.sql)$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(sql|py|bat|log|txt)$">
+  Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^(assets|uploads)/ - [L]
+RewriteRule ^surprise/([A-Za-z0-9]{4,12})/?$ surprise.php?code=$1 [L,QSA]
